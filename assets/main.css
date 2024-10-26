@@ -6,6 +6,83 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
     margin: 0 160px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 0;
+}
+
+.header a {
+    font-weight: 500;
+    color: #09334F;
+    font-size: 18px;
+}
+
+.phones {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone__icon {
+    width: 20px;
+    padding: 2px;
+}
+
+.phone__text {
+    margin-left: 10px;
+}
+
+.credentials {
+    display: flex;
+    align-items: center;
+}
+
+.credentials__item {
+    margin-left: 40px;
+}
+
+.credentials__item:first-child {
+    margin-left: 0;
+}
+
+.credentials__item:last-child {
+    margin-left: 23px;
+}
+
+.credentials-link {
+    display: flex;
+    align-items: center;
+}
+
+.credentials-link__icon {
+    width: 40px;
+    padding: 3px;
+}
+
+.credentials-link__text {
+    margin-left: 12px;
 }
