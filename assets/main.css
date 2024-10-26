@@ -23,6 +23,28 @@ a {
     width: 100%;
 }
 
+.button {
+    border-radius: 10px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+
+    cursor: pointer;
+}
+
+.button_light {
+    background: #FEFFAB;
+    color: #101010;
+}
+
+.button_big {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
 
 
 
@@ -103,12 +125,15 @@ a {
 
 .hero {
     background-color: #09334F;
-    min-height: 200px;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero__inner {
     width: 100%;
     position: relative;
+    padding-top: 300px;
+    padding-bottom: 273px;
 }
 
 .navbar {
@@ -165,4 +190,116 @@ a {
 .langlist__item_selected a,
 .langlist__item:hover a {
     text-decoration: underline;
+}
+
+.hero__section {
+    display: flex;
+    align-items: start;
+    gap: 194px;
+}
+
+.contactus {
+    max-width: 704px;
+}
+
+.contactus__header {
+    color: #F7F6F6;
+    font-size: 68px;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.contactus__header span {
+    color: #FEFFAB;
+}
+
+.contactus__descr {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color: #F7F6F6;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.id-card-img {
+    width: 620px;
+    box-shadow: 13px 13px 24px rgba(0, 0, 0, 0.29);
+    border-radius: 20px;
+}
+
+.registration {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 265px;
+}
+
+.info {
+    max-width: 700px;
+}
+
+.info__label {
+    color: #F7F6F6;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info__header {
+    margin: 30px 0;
+    color: #FEFFAB;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info__descr {
+    color: #F7F6F6;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.info__descr:last-of-type {
+    margin-bottom: 0;
+}
+
+.dovidka-img {
+    max-width: 716px;
+}
+
+.hero__decoration {
+    position: absolute;
+}
+
+#hd1 {
+    top: -50px;
+    left: 1530px;
+    width: 600px;
+    transform: rotate(-19.41deg);
+    opacity: 0.23;
+}
+
+#hd2 {
+    width: 760px;
+    transform: rotate(-19.41deg);
+    top: 180px;
+    left: 995px;
+}
+
+#hd3 {
+    width: 1050px;
+    transform: rotate(-19.41deg);
+    top: 765px;
+    left: -155px;
+    opacity: 0.4;
+}
+
+#hd4 {
+    top: 1040px;
+    left: 280px;
+    transform: rotate(-117.08deg);
+    width: 840px;
+    opacity: 0.3;
 }
