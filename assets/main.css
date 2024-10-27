@@ -511,3 +511,53 @@ a {
 .section2__form-container form {
     margin-top: 61px;
 }
+
+
+
+
+/* SERVICES SECTION */
+
+.services {
+    background: #E7EFF3;
+    padding: 150px 0;
+}
+
+.services__header {
+    color: #09334F;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.services__list {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 640px;
+}
+
+.services__list li {
+    max-width: 610px;
+    display: flex;
+    align-items: start;
+    gap: 65px;
+    margin-top: 45px;
+}
+
+.services__list img {
+    width: 82px;
+}
+
+.services__list h4 {
+    color: #09334F;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.services__list p {
+    margin-top: 20px;
+    color: #09334F;
+    font-size: 16px;
+    font-weight: 400;
+}
