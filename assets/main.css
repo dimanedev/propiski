@@ -838,3 +838,117 @@ a {
     margin: 10px 15px;
     text-align: left;
 }
+
+
+
+
+/* QUESTIONS SECTION */
+
+.questions {
+    padding: 150px 0;
+    background: #E7EFF3;
+}
+
+.questions__title {
+    color: #101010;
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 79px;
+}
+
+.accordion {
+    .accordion__item {
+        border-bottom: 2px #101010 solid;
+    }
+
+    button {
+        color: #101010;
+        font-size: 38px;
+        font-weight: 500;
+
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding-bottom: 25px;
+        margin-top: 30px;
+        border: none;
+        background: none;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+
+            &::after {
+                cursor: pointer;
+            }
+        }
+
+        .accordion__title {
+            padding-bottom: 25px;
+        }
+
+        .icon {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+
+            &::before {
+                display: block;
+                position: absolute;
+                content: '';
+                top: 8px;
+                left: -12px;
+                width: 30px;
+                height: 2px;
+                background: currentColor;
+            }
+
+            &::after {
+                display: block;
+                position: absolute;
+                content: '';
+                top: -6px;
+                left: 2px;
+                width: 2px;
+                height: 30px;
+                background: currentColor;
+            }
+        }
+    }
+
+    button[aria-expanded='true'] {
+
+        .icon {
+            &::after {
+                width: 0;
+            }
+        }
+
+        +.accordion__content {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+    }
+
+    .accordion__content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+
+        p {
+            max-width: 60%;
+            font-size: 20px;
+            font-weight: 500;
+            font-weight: 300;
+            margin: 10px 0 30px;
+        }
+    }
+}
