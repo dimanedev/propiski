@@ -952,3 +952,52 @@ a {
         }
     }
 }
+
+
+
+
+/* SECTION 8 */
+
+.section8 {
+    background-color: #09334F;
+    padding: 110px 0 100px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 170px;
+    }
+
+    .passport-img {
+        margin-left: -60px;
+        width: 700px;
+    }
+
+    .section8__title {
+        color: white;
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .section8__descr {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .input__outer {
+        max-width: 517px;
+    }
+
+    input {
+        border-color: transparent;
+    }
+
+    .button {
+        width: 344px;
+        margin-top: 80px;
+    }
+}
