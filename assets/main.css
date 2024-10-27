@@ -748,3 +748,93 @@ a {
 .request .form .input__outer:last-of-type input {
     margin-bottom: 0;
 }
+
+.reviews {
+    background: #f7f6f6;
+    padding: 150px 0;
+    overflow: hidden;
+}
+
+.reviews__title {
+    color: #09334F;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.slider__wrapper {
+    width: calc(100% + 400px);
+    height: 840px;
+    margin-top: 55px;
+    margin-left: -200px;
+}
+
+.swiper {
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: auto !important;
+    width: 370px !important;
+    margin-bottom: 75px;
+    box-shadow: 0px 0px 13px #C4C4C4;
+    border: 1px #E8E8E8 solid;
+}
+
+.review__top {
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+    height: 76px;
+    gap: 10px;
+    border-bottom: 1px solid #E1E8ED;
+}
+
+.user__pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.user-name {
+    text-align: left;
+    color: #1C2022;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.50px;
+}
+
+.stars-wrapper {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.review__time {
+    margin-top: 4px;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.50px;
+    text-align: left;
+}
+
+.checked {
+    color: #fff051 !important;
+}
+
+.fa-star {
+    color: #EFECDC;
+    font-size: 12px;
+}
+
+.review__text {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 10px 15px;
+    text-align: left;
+}
