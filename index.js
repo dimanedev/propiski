@@ -28,40 +28,14 @@ inputs.concat(textareas).forEach(input => {
 
 // Slider
 
-let swiper = new Swiper(".mySwiper", {
+let swiper1 = new Swiper(".mySwiper", {
   autoplay: {
     delay: 5000
   },
   slidesPerView: 'auto',
   loop: true,
   loopAddBlankSlides: true,
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30
-  //   },
-  //   // when window width is >= 640px
-  //   768: {
-  //     slidesPerView: 6,
-  //     spaceBetween: 20,
-  //     spaceBetweenRows: 50
-  //   }
-  // },
-  grid: {
-    rows: 2,
-    fill: 'row'
-  },
   spaceBetween: 20,
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
 });
 
 
@@ -98,3 +72,30 @@ function toggleAccordion() {
 }
 
 accordionItems.forEach(item => item.addEventListener('click', toggleAccordion));
+
+let headerHeight = document.querySelector('.header').clientHeight;
+
+window.addEventListener('resize', () => {
+  headerHeight = document.querySelector('.header').clientHeight;
+});
+
+function handleNavbar() {
+  let scrollTop = window.scrollY;
+  let navbar = document.querySelector('.navbar');
+
+  if (scrollTop >= headerHeight) {
+    navbar.classList.add('navbar__fixed');
+  } else {
+    navbar.classList.remove('navbar__fixed');
+  }
+}
+
+handleNavbar();
+
+window.addEventListener('scroll', handleNavbar);
+
+// Burger btn
+
+document.querySelector('.burger').addEventListener('click', (e) => {
+  e.target.classList.toggle('active');
+})

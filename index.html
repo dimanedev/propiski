@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Прописки</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="assets/main.css">
 </head>
 
@@ -47,14 +47,16 @@
                             <span class="credentials-link__text">propiskaua@gmail.com</span>
                         </a>
                     </li>
-                    <li class="credentials__item">
-                        <a href="#" class="credentials-link">
-                            <img class="credentials-link__icon" src="./assets/img/facebook-logo.svg" alt="">
+                </ul>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials-link">
+                            <img class="socials-link__icon" src="./assets/img/facebook-logo.svg" alt="">
                         </a>
                     </li>
-                    <li class="credentials__item">
-                        <a href="#" class="credentials-link">
-                            <img class="credentials-link__icon" src="./assets/img/instagram-logo.svg" alt="">
+                    <li class="socials__item">
+                        <a href="#" class="socials-link">
+                            <img class="socials-link__icon" src="./assets/img/instagram-logo.svg" alt="">
                         </a>
                     </li>
                 </ul>
@@ -89,6 +91,15 @@
                         <li class="langlist__item"><a href="#">RU</a></li>
                         <li class="langlist__item"><a href="#">EN</a></li>
                     </ul>
+                    <div class="dropdown">
+                        <button class="dropbtn">UA</button>
+                        <div class="dropdown-content">
+                            <a href="#">UA</a>
+                            <a href="#">RU</a>
+                            <a href="#">EN</a>
+                        </div>
+                    </div>
+                    <div class="burger"><span></span></div>
                 </nav>
                 <div class="hero__section">
                     <div class="contactus">
@@ -252,7 +263,7 @@
             <div class="section4__top">
                 <img src="./assets/img/id-blank.svg" class="id-blank" alt="Шаблон паспорта">
                 <div>
-                    <p class="section4__label">Тимчасова і постійна прописка</p>
+                    <p class="section4__label">Реєстрація в києві</p>
                     <h2 class="section4__header">Тимчасова і постійна прописка</h2>
                     <p class="section4__descr">
                         У сфері державної реєстрації місця проживання для громадян України та іноземців існують два
@@ -362,411 +373,454 @@
         <div class="container">
             <p class="reviews__title">Відгуки Google</p>
         </div>
-        <div class="slider__wrapper">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-2.png" class="user__pic">
-                                <div>
-                                    <p class="user-name">Ellen Hudson</p>
-                                    <div class="stars-wrapper rated-2">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+        <div class="slider-container">
+            <div class="slider__wrapper">
+                <div class="swiper mySwiper" id="swiper-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-2.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name">Ellen Hudson</p>
+                                        <div class="stars-wrapper rated-2">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">a week ago</p>
                                     </div>
-                                    <p class="review__time">a week ago</p>
                                 </div>
+                                <p class="review__text">
+                                    I would highly recommend t-yard arborists. They are competitive in their quotes,
+                                    professional and they get the job done. My mother's very old and very large liquid
+                                    amber
+                                    tree had become sick. One of its three large trunks had snapped off and it was
+                                    decided
+                                    that it needed to be removed. Being very close to the neigbouring school playground
+                                    and
+                                    the next door unit complex, they expertly and safely brought it down.
+                                </p>
                             </div>
-                            <p class="review__text">
-                                I would highly recommend t-yard arborists. They are competitive in their quotes,
-                                professional and they get the job done. My mother's very old and very large liquid amber
-                                tree had become sick. One of its three large trunks had snapped off and it was decided
-                                that it needed to be removed. Being very close to the neigbouring school playground and
-                                the next door unit complex, they expertly and safely brought it down.
-                            </p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-2.png" class="user__pic">
-                                <div>
-                                    <p class="user-name">Ellen Hudson</p>
-                                    <div class="stars-wrapper rated-2">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-2.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name">Ellen Hudson</p>
+                                        <div class="stars-wrapper rated-2">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">a week ago</p>
                                     </div>
-                                    <p class="review__time">a week ago</p>
                                 </div>
+                                <p class="review__text">
+                                    I would highly recommend t-yard arborists. They are competitive in their quotes,
+                                    professional and they get the job done. My mother's very old and very large liquid
+                                    amber
+                                    tree had become sick. One of its three large trunks had snapped off and it was
+                                    decided
+                                    that it needed to be removed. Being very close to the neigbouring school playground
+                                    and
+                                    the next door unit complex, they expertly and safely brought it down.
+                                </p>
                             </div>
-                            <p class="review__text">
-                                I would highly recommend t-yard arborists. They are competitive in their quotes,
-                                professional and they get the job done. My mother's very old and very large liquid amber
-                                tree had become sick. One of its three large trunks had snapped off and it was decided
-                                that it needed to be removed. Being very close to the neigbouring school playground and
-                                the next door unit complex, they expertly and safely brought it down.
-                            </p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-2.png" class="user__pic">
-                                <div>
-                                    <p class="user-name">Graeme Ceshire</p>
-                                    <div class="stars-wrapper rated-2">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-2.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name">Graeme Ceshire</p>
+                                        <div class="stars-wrapper rated-2">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">a week ago</p>
                                     </div>
-                                    <p class="review__time">a week ago</p>
                                 </div>
+                                <p class="review__text">
+                                    I would highly recommend t-yard arborists. They are competitive in their quotes,
+                                    professional and they get the job done. My mother's very old and very large liquid
+                                    amber
+                                    tree had become sick. One of its three large trunks had snapped off and it was
+                                    decided
+                                    that it needed to be removed. Being very close to the neigbouring school playground
+                                    and
+                                    the next door unit complex, they expertly and safely brought it down.
+                                </p>
                             </div>
-                            <p class="review__text">
-                                I would highly recommend t-yard arborists. They are competitive in their quotes,
-                                professional and they get the job done. My mother's very old and very large liquid amber
-                                tree had become sick. One of its three large trunks had snapped off and it was decided
-                                that it needed to be removed. Being very close to the neigbouring school playground and
-                                the next door unit complex, they expertly and safely brought it down.
-                            </p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-2.png" class="user__pic">
-                                <div>
-                                    <p class="user-name">Graeme Ceshire</p>
-                                    <div class="stars-wrapper rated-2">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-2.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name">Graeme Ceshire</p>
+                                        <div class="stars-wrapper rated-2">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">a week ago</p>
                                     </div>
-                                    <p class="review__time">a week ago</p>
                                 </div>
+                                <p class="review__text">
+                                    I would highly recommend t-yard arborists. They are competitive in their quotes,
+                                    professional and they get the job done. My mother's very old and very large liquid
+                                    amber
+                                    tree had become sick. One of its three large trunks had snapped off and it was
+                                    decided
+                                    that it needed to be removed. Being very close to the neigbouring school playground
+                                    and
+                                    the next door unit complex, they expertly and safely brought it down.
+                                </p>
                             </div>
-                            <p class="review__text">
-                                I would highly recommend t-yard arborists. They are competitive in their quotes,
-                                professional and they get the job done. My mother's very old and very large liquid amber
-                                tree had become sick. One of its three large trunks had snapped off and it was decided
-                                that it needed to be removed. Being very close to the neigbouring school playground and
-                                the next door unit complex, they expertly and safely brought it down.
-                            </p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-2.png" class="user__pic">
-                                <div>
-                                    <p class="user-name">Graeme Ceshire</p>
-                                    <div class="stars-wrapper rated-2">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-2.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name">Graeme Ceshire</p>
+                                        <div class="stars-wrapper rated-2">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">a week ago</p>
                                     </div>
-                                    <p class="review__time">a week ago</p>
                                 </div>
+                                <p class="review__text">
+                                    I would highly recommend t-yard arborists. They are competitive in their quotes,
+                                    professional and they get the job done. My mother's very old and very large liquid
+                                    amber
+                                    tree had become sick. One of its three large trunks had snapped off and it was
+                                    decided
+                                    that it needed to be removed. Being very close to the neigbouring school playground
+                                    and
+                                    the next door unit complex, they expertly and safely brought it down.
+                                </p>
                             </div>
-                            <p class="review__text">
-                                I would highly recommend t-yard arborists. They are competitive in their quotes,
-                                professional and they get the job done. My mother's very old and very large liquid amber
-                                tree had become sick. One of its three large trunks had snapped off and it was decided
-                                that it needed to be removed. Being very close to the neigbouring school playground and
-                                the next door unit complex, they expertly and safely brought it down.
-                            </p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-2.png" class="user__pic">
-                                <div>
-                                    <p class="user-name"></p>
-                                    <div class="stars-wrapper rated-2">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-2.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name"></p>
+                                        <div class="stars-wrapper rated-2">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">a week ago</p>
                                     </div>
-                                    <p class="review__time">a week ago</p>
                                 </div>
+                                <p class="review__text">
+                                    I would highly recommend t-yard arborists. They are competitive in their quotes,
+                                    professional and they get the job done. My mother's very old and very large liquid
+                                    amber
+                                    tree had become sick. One of its three large trunks had snapped off and it was
+                                    decided
+                                    that it needed to be removed. Being very close to the neigbouring school playground
+                                    and
+                                    the next door unit complex, they expertly and safely brought it down.
+                                </p>
                             </div>
-                            <p class="review__text">
-                                I would highly recommend t-yard arborists. They are competitive in their quotes,
-                                professional and they get the job done. My mother's very old and very large liquid amber
-                                tree had become sick. One of its three large trunks had snapped off and it was decided
-                                that it needed to be removed. Being very close to the neigbouring school playground and
-                                the next door unit complex, they expertly and safely brought it down.
-                            </p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name"></p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name"></p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
                                     </div>
-                                    <p class="review__time">3 months ago</p>
                                 </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
                             </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name"></p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name"></p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name"></p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name"></p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name"></p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name"></p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name">Michael Loganathan</p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name">Michael Loganathan</p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review">
-                            <div class="review__top">
-                                <img src="./assets/img/user-pic-1.png" class="user__pic">
-                                <div>
-                                    <p class="user-name">Michael Loganathan</p>
-                                    <div class="stars-wrapper rated-4">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p class="review__time">3 months ago</p>
-                                </div>
-                            </div>
-                            <p class="review__text">
-                                Our experience with T Yard melbourne arborists was awesome. From the very first phone
-                                call, to the quote and subsequently to the men felling and trimming the trees to the
-                                stump grinding was smooth sailing. No issue whatsoever. We found them to be friendly,
-                                courteous, polite and very tidy. Safety is always upfront in their minds. Well done
-                                boys. We will need you to return next year to trim some more trees.
-                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper mySwiper" id="swiper-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name"></p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name"></p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name"></p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name"></p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name"></p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name"></p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name">Michael Loganathan</p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name">Michael Loganathan</p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review__top">
+                                    <img src="./assets/img/user-pic-1.png" class="user__pic">
+                                    <div>
+                                        <p class="user-name">Michael Loganathan</p>
+                                        <div class="stars-wrapper rated-4">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="review__time">3 months ago</p>
+                                    </div>
+                                </div>
+                                <p class="review__text">
+                                    Our experience with T Yard melbourne arborists was awesome. From the very first
+                                    phone
+                                    call, to the quote and subsequently to the men felling and trimming the trees to the
+                                    stump grinding was smooth sailing. No issue whatsoever. We found them to be
+                                    friendly,
+                                    courteous, polite and very tidy. Safety is always upfront in their minds. Well done
+                                    boys. We will need you to return next year to trim some more trees.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
