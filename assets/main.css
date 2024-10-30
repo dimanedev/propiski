@@ -393,11 +393,8 @@ a {
     right: 0;
     width: 25px;
     height: 18px;
-    display: flex;
     align-items: center;
     cursor: pointer;
-
-    /* transition: .2s; */
 }
 
 .burger span {
@@ -438,6 +435,10 @@ a {
     transform: rotate(-45deg);
     bottom: 8px;
     /* transform: translateY(50%); */
+}
+
+.burger {
+    display: none;
 }
 
 .langlist__item a {
@@ -1947,6 +1948,10 @@ a {
     .navbar>.navlist,
     .navbar>.dropdown {
         display: none;
+    }
+
+    .burger {
+        display: flex;
     }
 
     .navbar__fixed .burger {
