@@ -98,4 +98,16 @@ window.addEventListener('scroll', handleNavbar);
 
 document.querySelector('.burger').addEventListener('click', (e) => {
   e.target.classList.toggle('active');
+  document.body.classList.toggle('fixed');
+  document.querySelector('.mob_menu').classList.toggle('active');
+
+  let rect = document.querySelector('.header').getBoundingClientRect();
+  let mobMenuTop = 0;
+  let mobMenu = document.querySelector('.mob_menu__inner');
+
+  if (rect.bottom > 0) {
+    mobMenuTop = rect.bottom;
+  }
+
+  mobMenu.style.top = mobMenuTop + 'px';
 })
