@@ -81,10 +81,9 @@ window.addEventListener('scroll', handleNavbar);
 
 // Burger btn
 
-document.querySelector('.burger').addEventListener('click', (e) => {
-  e.target.classList.toggle('active');
-  document.body.classList.toggle('fixed');
-  document.querySelector('.mob_menu').classList.toggle('active');
+document.querySelector('#burger').addEventListener('click', (e) => {
+  document.body.classList.add('fixed');
+  document.querySelector('.mob_menu').classList.add('active');
 
   let rect = document.querySelector('.header').getBoundingClientRect();
   let mobMenuTop = 0;
@@ -95,4 +94,13 @@ document.querySelector('.burger').addEventListener('click', (e) => {
   }
 
   mobMenu.style.top = mobMenuTop + 'px';
+})
+
+function closeMobMenu() {
+  document.querySelector('.mob_menu').classList.remove('active');
+  document.body.classList.remove('fixed');
+}
+
+document.querySelector('#burger_active').addEventListener('click', () => {
+  closeMobMenu();
 })
