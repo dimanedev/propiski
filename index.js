@@ -8,8 +8,6 @@ requiredInputs.forEach(input => {
       input.classList.remove('input_error');
     }
   });
-
-
 });
 
 let inputs = Array.from(document.querySelectorAll('input'));
@@ -39,21 +37,6 @@ let swiper1 = new Swiper(".mySwiper", {
 });
 
 
-// Відгуки
-
-let starsWrappers = document.querySelectorAll('.stars-wrapper');
-
-starsWrappers.forEach(starsWrapper => {
-  let starsCount = starsWrapper.classList[1][6];
-  let children = starsWrapper.children;
-
-  for (let i = 0; i < starsCount; i++) {
-    children[i].classList.add('checked');
-  }
-});
-
-
-
 
 // Accordion (Часті питання)
 
@@ -72,6 +55,8 @@ function toggleAccordion() {
 }
 
 accordionItems.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
 
 let headerHeight = document.querySelector('.header').clientHeight;
 
